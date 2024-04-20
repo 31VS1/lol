@@ -35,8 +35,8 @@ Arraylist = {
         task.spawn(function()
             repeat
                 task.wait()
-                Text.TextStrokeTransparency = shared["CometConfigs"].StrokeTransparency
-                Text.TextColor3 = shared["CometConfigs"].Color
+                Text.TextStrokeTransparency = 0.75
+                Text.TextColor3 =  Color3.fromRGB(255,65,65),
             until not Text
         end)
     end,
