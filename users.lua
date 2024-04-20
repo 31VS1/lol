@@ -13,6 +13,7 @@ Grid.SortOrder = Enum.SortOrder.LayoutOrder
 Grid.CellSize = UDim2.new(1, 0, 0.0275, 0)
 Grid.HorizontalAlignment = Enum.HorizontalAlignment.Left
 
+
 local Arraylist = {
     Add = function(Name, Suffix)
         local Text = Instance.new("TextLabel", arrayFrame)
@@ -21,11 +22,11 @@ local Arraylist = {
         Text.Name = Name
         Text.BackgroundTransparency = 1
         Text.Size = UDim2.new(1, 0, 0.0275, 0)
-        Text.Font = Enum.Font.Gotham
+        Text.Font = Enum.Font.GothamBold
         Text.TextSize = 14 
         Text.Text = newName
         Text.TextXAlignment = Enum.TextXAlignment.Left 
-        Text.TextColor3 = Color3.fromRGB(255, 65, 65)
+        Text.TextColor3 = Color3.fromRGB(30, 0, 200)
         Text.TextStrokeTransparency = 0.75
         
         local size = game:GetService("TextService"):GetTextSize(newName, Text.TextSize, Text.Font, Vector2.new(1000000, 1000000))
